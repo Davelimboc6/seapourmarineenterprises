@@ -1,0 +1,150 @@
+.hero-seafour {
+    height: calc(70vh - 20px);
+    padding: 4rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e5e7eb;
+
+    background-image:
+      radial-gradient(circle at top left, rgba(29,78,216,.55) 0%, rgba(2,6,23,.92) 45%, rgba(2,6,23,.98) 100%),
+      url('/images/speedboat.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* resources/css/app.css or a custom stylesheet */
+.hero-section {
+      min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Container */
+.hero-seafour__inner {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* Content */
+.hero-seafour__badge {
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #22d3ee;
+}
+
+.hero-seafour__title {
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+    color: #f9fafb;
+    margin: 1rem 0 0.75rem;
+}
+
+.hero-seafour__title-highlight {
+    color: #22d3ee;
+}
+
+.hero-seafour__subtitle {
+    max-width: 32rem;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: #cbd5f5;
+}
+
+/* Actions */
+.hero-seafour__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.hero-seafour__primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.6rem;
+    border-radius: 999px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #020617;
+    background-image: linear-gradient(to right, #3b82f6, #22d3ee);
+    box-shadow: 0 12px 30px rgba(34, 211, 238, 0.35);
+    cursor: pointer;
+    transition: filter 0.18s ease, transform 0.18s ease;
+}
+
+.hero-seafour__primary-btn:hover {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+.hero-seafour__ghost-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+.hero-seafour__ghost-link:hover {
+    color: #ffffff;
+}
+
+.hero-seafour__ghost-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 999px;
+    border: 1px solid #1f2937;
+    background-color: rgba(15, 23, 42, 0.9);
+    font-size: 0.75rem;
+}
+
+/* Feature bullets */
+.hero-seafour__features {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+.hero-seafour__feature {
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.hero-seafour__feature::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 999px;
+    background-image: linear-gradient(to right, #3b82f6, #22d3ee);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .hero-seafour__subtitle {
+        font-size: 1.02rem;
+    }
+}
